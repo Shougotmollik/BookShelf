@@ -14,15 +14,15 @@ class AppColorStrings {
   static const lightBgColor = Colors.white;
   static const lightOnBgColor = Colors.black;
   static const lightFontColor = Colors.black;
-  static const lightLabelColor = Colors.grey;
+  static const lightLabelColor = Colors.black54;
   static const lightSurfaceColor = Colors.white;
   static const lightOnSurfaceColor = Colors.black;
 
-  // Light Theme properties
+  // Dark Theme properties
   static const darkBgColor = Colors.black;
   static const darkOnBgColor = Colors.white;
   static const darkFontColor = Colors.white;
-  static const darkLabelColor = Colors.grey;
+  static const darkLabelColor = Colors.black54;
   static const darkSurfaceColor = Colors.black;
   static const darkOnSurfaceColor = Colors.white;
 }
