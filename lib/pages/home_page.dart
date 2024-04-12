@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   Column(
-                    children: [Text("HomePage")],
+                    children: [
+                      Text("HomePage"),
+                    ],
                   )
                 ],
               ),
@@ -31,3 +33,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
