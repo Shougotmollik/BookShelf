@@ -81,22 +81,22 @@ class BookModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["id"] = id;
-    _data["title"] = title;
-    _data["description"] = description;
-    _data["rating"] = rating;
-    _data["pages"] = pages;
-    _data["language"] = language;
-    _data["audioLen"] = audioLen;
-    _data["author"] = author;
-    _data["aboutAuthor"] = aboutAuthor;
-    _data["bookUrl"] = bookUrl;
-    _data["audioUrl"] = audioUrl;
-    _data["category"] = category;
-    _data["coverUrl"] = coverUrl;
-    _data["price"] = price;
-    _data["numberOfRating"] = numberOfRating;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["id"] = id;
+    data["title"] = title;
+    data["description"] = description;
+    data["rating"] = rating;
+    data["pages"] = pages;
+    data["language"] = language;
+    data["audioLen"] = audioLen;
+    data["author"] = author;
+    data["aboutAuthor"] = aboutAuthor;
+    data["bookUrl"] = bookUrl;
+    data["audioUrl"] = audioUrl;
+    data["category"] = category;
+    data["coverUrl"] = coverUrl;
+    data["price"] = price;
+    data["numberOfRating"] = numberOfRating;
+    return data;
   }
 }
