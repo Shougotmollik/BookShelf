@@ -1,5 +1,5 @@
 import 'package:book_shelf/config/theme/themes.dart';
-import 'package:book_shelf/pages/welcome_page.dart';
+import 'package:book_shelf/pages/welcomePage/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
