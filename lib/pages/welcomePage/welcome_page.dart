@@ -1,5 +1,5 @@
 import 'package:book_shelf/config/image_strings.dart';
-import 'package:book_shelf/pages/home_page.dart';
+import 'package:book_shelf/pages/homePage/home_page.dart';
 import 'package:book_shelf/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
