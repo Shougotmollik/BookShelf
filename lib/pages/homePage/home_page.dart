@@ -1,4 +1,7 @@
+import 'package:book_shelf/model/book_catagory_model.dart';
 import 'package:book_shelf/pages/homePage/app_bar.dart';
+import 'package:book_shelf/widgets/catagory_tab_bar.dart';
+import 'package:book_shelf/widgets/my_input_text_filed.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,7 +14,7 @@ class HomePage extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(8.0),
-            height: 500,
+            height: 350,
             decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
                 borderRadius: const BorderRadius.only(
@@ -61,17 +64,32 @@ class HomePage extends StatelessWidget {
                             )
                           ],
                         ),
-                        const SizedBox(height: 10),
-                        Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.background,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
+                        const SizedBox(height: 20),
+                        const MyInputTextField(),
+                        const SizedBox(height: 20),
+                        Row(
+                          children: [
+                            Text("Topics",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .labelLarge
+                                    ?.copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onPrimaryContainer))
+                          ],
+                        ),
+                        const SizedBox(height: 15),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
                           child: Row(
-                            children: [
-                              TextFormField(),
-                            ],
+                            children: bookcatagory
+                                .map(
+                                  (e) => CatagoryTabBar(
+                                      iconPath: e["icon"]!,
+                                      btnText: e["label"]!),
+                                )
+                                .toList(),
                           ),
                         )
                       ],
