@@ -1,4 +1,3 @@
-import 'package:book_shelf/config/colors.dart';
 import 'package:book_shelf/config/theme/color_scheme.dart';
 import 'package:book_shelf/config/theme/text_theme.dart';
 import 'package:flutter/material.dart';
