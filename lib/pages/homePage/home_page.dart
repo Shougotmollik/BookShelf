@@ -28,9 +28,51 @@ class HomePage extends StatelessWidget {
                         const HomeAppBar(),
                         Row(
                           children: [
-                            Text("Good Morning ✋",
-                                style: Theme.of(context).textTheme.bodyMedium),
+                            Text("Good Morning 😃, ",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium
+                                    ?.copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onPrimary)),
+                            Text("Shougot",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyLarge
+                                    ?.copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onPrimary)),
                           ],
+                        ),
+                        const SizedBox(height: 5),
+                        Row(
+                          children: [
+                            Text(
+                              "Time to read book and enhance your knowledge",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .labelSmall
+                                  ?.copyWith(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onPrimary),
+                            )
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.background,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Row(
+                            children: [
+                              TextFormField(),
+                            ],
+                          ),
                         )
                       ],
                     ),
