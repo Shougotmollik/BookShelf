@@ -1,3 +1,4 @@
+import 'package:book_shelf/pages/homePage/app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,20 +10,30 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 400,
+            padding: const EdgeInsets.all(8.0),
+            height: 500,
             decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
                 borderRadius: const BorderRadius.only(
                   bottomRight: Radius.circular(12),
                   bottomLeft: Radius.circular(12),
                 )),
-            child: const Expanded(
+            child: Expanded(
               child: Row(
                 children: [
-                  Column(
-                    children: [
-                      Text("HomePage"),
-                    ],
+                  Expanded(
+                    child: Column(
+                      children: [
+                        const SizedBox(height: 40),
+                        const HomeAppBar(),
+                        Row(
+                          children: [
+                            Text("Good Morning ✋",
+                                style: Theme.of(context).textTheme.bodyMedium),
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
@@ -33,4 +44,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
