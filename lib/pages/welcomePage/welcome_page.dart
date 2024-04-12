@@ -1,6 +1,6 @@
 import 'package:book_shelf/config/image_strings.dart';
 import 'package:book_shelf/pages/homePage/home_page.dart';
-import 'package:book_shelf/widgets/my_button.dart';
+import 'package:book_shelf/pages/welcomePage/my_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -89,12 +89,11 @@ class WelcomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: PrimaryButton(
-              btnOnPress: () {
-                Get.offAll(const HomePage());
-              },
-              btnText: 'Continue',
-            ),
-          ),
+                btnText: "Continue",
+                btnOnPress: () {
+                  Get.offAll(const HomePage());
+                }),
+          )
         ],
       ),
     );
