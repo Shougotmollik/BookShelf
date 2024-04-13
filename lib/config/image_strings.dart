@@ -4,6 +4,16 @@ class AppImageStrings {
   //?   images
   static const bookImage = "assets/icons/books.png";
 
+  // Book Images
+
+  static const cProgramming = "assets/images/c_programming_book.jpg";
+  static const cncProgramming = "assets/images/cnc_book.jpg";
+  static const javaProgramming = "assets/images/java_programming_book.jpg";
+  static const javaScrpitProgramming =
+      "assets/images/javScript_programming_book.jpg";
+  static const linuxProgramming = "assets/images/linux_book.jpg";
+  static const pythonProgramming = "assets/images/python_book.jpg";
+
   //? Icons
 
   static const drawerIcon = "assets/icons/drawer_icon.svg";
