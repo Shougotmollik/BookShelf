@@ -2,12 +2,12 @@ import 'package:book_shelf/config/image_strings.dart';
 
 var bookcatagory = [
   {
-    "icon": AppImageStrings.heartIcon,
-    "label": "Romance",
+    "icon": AppImageStrings.starIcon,
+    "label": "Programming",
   },
   {
     "icon": AppImageStrings.worldIcon,
-    "label": "Documentry",
+    "label": "Documentary",
   },
   {
     "icon": AppImageStrings.planeIcon,
@@ -15,10 +15,14 @@ var bookcatagory = [
   },
   {
     "icon": AppImageStrings.starIcon,
-    "label": "Fantacy",
+    "label": "Fantasy",
   },
   {
     "icon": AppImageStrings.worldIcon,
     "label": "Motivation",
+  },
+  {
+    "icon": AppImageStrings.heartIcon,
+    "label": "Romance",
   },
 ];
