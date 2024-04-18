@@ -11,7 +11,7 @@ class CatagoryTabBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(right: 10),
-      child: GestureDetector(
+      child: InkWell(
         onDoubleTap: () {},
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
@@ -21,6 +21,7 @@ class CatagoryTabBar extends StatelessWidget {
           ),
           child: Row(
             children: [
+              /**/
               SvgPicture.asset(iconPath),
               const SizedBox(width: 10),
               Text(
