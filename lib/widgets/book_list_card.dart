@@ -1,5 +1,7 @@
+import 'package:book_shelf/pages/bookDetails/book_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 import '../config/image_strings.dart';
 
@@ -23,7 +25,9 @@ class MyBookListCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Get.to(const BookDetails());
+      },
       child: Column(
         children: [
           const SizedBox(height: 10),
