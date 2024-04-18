@@ -1,11 +1,13 @@
 import 'package:book_shelf/model/book_category_model.dart';
 import 'package:book_shelf/model/book_data.dart';
+import 'package:book_shelf/pages/bookDetails/book_details.dart';
 import 'package:book_shelf/pages/homePage/app_bar.dart';
 import 'package:book_shelf/widgets/book_card.dart';
 import 'package:book_shelf/widgets/book_list_card.dart';
 import 'package:book_shelf/widgets/category_tab_bar.dart';
 import 'package:book_shelf/widgets/my_input_text_filed.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -123,7 +125,9 @@ class HomePage extends StatelessWidget {
                           .map((e) => MyBookCard(
                                 coverImage: e.coverUrl!,
                                 titleText: e.title!,
-                                onTap: () {},
+                                onTap: () {
+                                  Get.to(const BookDetails());
+                                },
                               ))
                           .toList(),
                     ),
